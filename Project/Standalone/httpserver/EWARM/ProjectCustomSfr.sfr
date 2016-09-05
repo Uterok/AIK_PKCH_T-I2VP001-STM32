@@ -1,0 +1,78 @@
+[Sfr]
+sfr = "GPIOB_AFRL",	"Memory",	0x40020420,	4,	base=16,	modified
+sfr = "GPIOE_AFRL",	"Memory",	0x40021020,	4,	base=16,	modified
+sfr = "GPIOF_MODER",	"Memory",	0x40021400,	4,	base=16,	modified
+sfr = "GPIOG_AFRL",	"Memory",	0x40021820,	4,	base=16,	modified
+sfr = "GPIOH_IDR",	"Memory",	0x40021c10,	4,	base=16,	modified
+sfr = "DMA1_S0FCR",	"Memory",	0x40026024,	4,	base=16,	modified
+sfr = "DMA1_S2M1AR",	"Memory",	0x40026050,	4,	base=16,	modified
+sfr = "DMA1_S3CR",	"Memory",	0x40026058,	4,	base=16,	modified
+sfr = "DMA1_S7NDTR",	"Memory",	0x400260bc,	4,	base=16,	modified
+sfr = "DMA1_S7M0AR",	"Memory",	0x400260c4,	4,	base=16,	modified
+sfr = "DMA1_S7M1AR",	"Memory",	0x400260c8,	4,	base=16,	modified
+sfr = "DMA2_HISR",	"Memory",	0x40026404,	4,	base=16,	modified
+sfr = "DMA2_S0CR",	"Memory",	0x40026410,	4,	base=16,	modified
+sfr = "RTC_ALRMASSR",	"Memory",	0x40002844,	4,	base=16,	modified
+sfr = "RTC_BK2R",	"Memory",	0x40002858,	4,	base=16,	modified
+sfr = "RTC_BK4R",	"Memory",	0x40002860,	4,	base=16,	modified
+sfr = "RTC_BK5R",	"Memory",	0x40002864,	4,	base=16,	modified
+sfr = "RTC_BK8R",	"Memory",	0x40002870,	4,	base=16,	modified
+sfr = "RTC_BK12R",	"Memory",	0x40002880,	4,	base=16,	modified
+sfr = "TIM1_SR",	"Memory",	0x40010010,	4,	base=16,	modified
+sfr = "TIM1_OCMR1",	"Memory",	0x40010018,	4,	base=16,	modified
+sfr = "TIM8_DIER",	"Memory",	0x4001040c,	4,	base=16,	modified
+sfr = "TIM8_CCR3",	"Memory",	0x4001043c,	4,	base=16,	modified
+sfr = "TIM2_OCMR1",	"Memory",	0x40000018,	4,	base=16,	modified
+sfr = "TIM2_CCMR2",	"Memory",	0x4000001c,	4,	base=16,	modified
+sfr = "TIM3_SMCR",	"Memory",	0x40000408,	4,	base=16,	modified
+sfr = "TIM3_DIER",	"Memory",	0x4000040c,	4,	base=16,	modified
+sfr = "TIM3_PSC",	"Memory",	0x40000428,	4,	base=16,	modified
+sfr = "TIM4_CCMR2",	"Memory",	0x4000081c,	4,	base=16,	modified
+sfr = "TIM4_OCMR2",	"Memory",	0x4000081c,	4,	base=16,	modified
+sfr = "TIM4_PSC",	"Memory",	0x40000828,	4,	base=16,	modified
+sfr = "TIM6_DIER",	"Memory",	0x4000100c,	4,	base=16,	modified
+sfr = "TIM9_PSC",	"Memory",	0x40014028,	4,	base=16,	modified
+sfr = "TIM9_ARR",	"Memory",	0x4001402c,	4,	base=16,	modified
+sfr = "TIM9_CCR1",	"Memory",	0x40014034,	4,	base=16,	modified
+sfr = "TIM12_CR1",	"Memory",	0x40001800,	4,	base=16,	modified
+sfr = "TIM12_CCR1",	"Memory",	0x40001834,	4,	base=16,	modified
+sfr = "TIM11_EGR",	"Memory",	0x40014814,	4,	base=16,	modified
+sfr = "TIM11_CCER",	"Memory",	0x40014820,	4,	base=16,	modified
+sfr = "TIM13_CR1",	"Memory",	0x40001c00,	4,	base=16,	modified
+sfr = "TIM13_OCMR1",	"Memory",	0x40001c18,	4,	base=16,	modified
+sfr = "TIM13_PSC",	"Memory",	0x40001c28,	4,	base=16,	modified
+sfr = "CAN1_TDH2R",	"Memory",	0x400065ac,	4,	base=16,	modified
+sfr = "CAN2_BTR",	"Memory",	0x4000681c,	4,	base=16,	modified
+sfr = "CAN2_TI0R",	"Memory",	0x40006980,	4,	base=16,	modified
+sfr = "CAN2_TDT1R",	"Memory",	0x40006994,	4,	base=16,	modified
+sfr = "CAN_F2R2",	"Memory",	0x40006654,	4,	base=16,	modified
+sfr = "CAN_F3R1",	"Memory",	0x40006658,	4,	base=16,	modified
+sfr = "CAN_F19R2",	"Memory",	0x400066dc,	4,	base=16,	modified
+sfr = "CAN_F21R1",	"Memory",	0x400066e8,	4,	base=16,	modified
+sfr = "OTG_FS_HPRT",	"Memory",	0x50000440,	4,	base=16,	modified
+sfr = "OTG_FS_HCCHAR0",	"Memory",	0x50000500,	4,	base=16,	modified
+sfr = "OTG_FS_HCTSIZ15",	"Memory",	0x500006f0,	4,	base=16,	modified
+sfr = "OTG_FS_DVBUSPULSE",	"Memory",	0x5000082c,	4,	base=16,	modified
+sfr = "OTG_FS_DIEPINT4",	"Memory",	0x50000988,	4,	base=16,	modified
+sfr = "OTG_FS_DIEPTSIZ5",	"Memory",	0x500009b0,	4,	base=16,	modified
+sfr = "OTG_FS_DIEPTSIZ15",	"Memory",	0x50000af0,	4,	base=16,	modified
+sfr = "OTG_HS_DIEPCTL3",	"Memory",	0x40040960,	4,	base=16,	modified
+sfr = "OTG_HS_DIEPINT1",	"Memory",	0x40040928,	4,	base=16,	modified
+sfr = "OTG_HS_DIEPINT4",	"Memory",	0x40040988,	4,	base=16,	modified
+sfr = "OTG_HS_DOEPINT2",	"Memory",	0x40040b48,	4,	base=16,	modified
+sfr = "TIM3_CCR1",	"Memory",	0x40000434,	4,	base=16,	modified
+sfr = "DMA1_S2M1AR.M1A",	"Memory",	0x40026050,	4,	base=16,	modified
+sfr = "DMA1_S7M0AR.M0A",	"Memory",	0x400260c4,	4,	base=16,	modified
+sfr = "DMA1_S7M1AR.M1A",	"Memory",	0x400260c8,	4,	base=16,	modified
+
+
+[SfrGroupInfo]
+group = "Custom", "GPIOB_AFRL"
+group = "Custom", "GPIOE_AFRL", "GPIOF_MODER", "GPIOG_AFRL", "GPIOH_IDR", "DMA1_S0FCR", "DMA1_S2M1AR", "DMA1_S3CR", "DMA1_S7NDTR", "DMA1_S7M0AR", "DMA1_S7M1AR", "DMA2_HISR", "DMA2_S0CR", "RTC_ALRMASSR", "RTC_BK2R", "RTC_BK4R", "RTC_BK5R", "RTC_BK8R", "RTC_BK12R", "TIM1_SR", "TIM1_OCMR1", "TIM8_DIER"
+group = "Custom", "TIM8_CCR3"
+group = "Custom", "TIM2_OCMR1", "TIM2_CCMR2", "TIM3_SMCR", "TIM3_DIER", "TIM3_PSC"
+group = "Custom", "TIM4_CCMR2", "TIM4_OCMR2", "TIM4_PSC", "TIM6_DIER", "TIM9_PSC"
+group = "Custom", "TIM9_ARR", "TIM9_CCR1", "TIM12_CR1", "TIM12_CCR1", "TIM11_EGR", "TIM11_CCER", "TIM13_CR1", "TIM13_OCMR1"
+group = "Custom", "TIM13_PSC", "CAN1_TDH2R", "CAN2_BTR", "CAN2_TI0R", "CAN2_TDT1R", "CAN_F2R2", "CAN_F3R1"
+group = "Custom", "CAN_F19R2", "CAN_F21R1", "OTG_FS_HPRT", "OTG_FS_HCCHAR0", "OTG_FS_HCTSIZ15", "OTG_FS_DVBUSPULSE"
+group = "Custom", "OTG_FS_DIEPINT4", "OTG_FS_DIEPTSIZ5", "OTG_FS_DIEPTSIZ15", "OTG_HS_DIEPCTL3", "OTG_HS_DIEPINT1", "OTG_HS_DIEPINT4", "OTG_HS_DOEPINT2"

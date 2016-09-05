@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.7" name="CooCox">
+  <Target name="CooCox" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="SupportCPlusplus" value="0"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F407VG"/>
+          <Define name="STM32F4XX"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/coocox/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="CooCox"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F4xx_1024.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./"/>
+  <Files>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_iwdg.h" type="1"/>
+    <File name="LWIP/init.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/init.h" type="1"/>
+    <File name="LWIP/vj.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/vj.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h" type="1"/>
+    <File name="LWIP/lcp.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/lcp.c" type="1"/>
+    <File name="LWIP/slipif.h" path="../../../Utilities/lwip_v1.3.2/src/include/netif/slipif.h" type="1"/>
+    <File name="LWIP/magic.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/magic.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_fsmc.h" type="1"/>
+    <File name="LWIP/auth.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/auth.h" type="1"/>
+    <File name="User/stm32f4xx_it.h" path="inc/stm32f4xx_it.h" type="1"/>
+    <File name="LWIP/ip.h" path="../../../Utilities/lwip_v1.3.2/src/include/ipv4/lwip/ip.h" type="1"/>
+    <File name="User/fs.h" path="inc/fs.h" type="1"/>
+    <File name="CMSIS" path="" type="2"/>
+    <File name="LWIP/ppp_oe.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/ppp_oe.c" type="1"/>
+    <File name="LWIP/loopif.h" path="../../../Utilities/lwip_v1.3.2/src/include/netif/loopif.h" type="1"/>
+    <File name="LWIP/chap.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/chap.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c" type="1"/>
+    <File name="LWIP/sys.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/sys.h" type="1"/>
+    <File name="LWIP/etharp.h" path="../../../Utilities/lwip_v1.3.2/src/include/netif/etharp.h" type="1"/>
+    <File name="LWIP/icmp.c" path="../../../Utilities/lwip_v1.3.2/src/core/ipv4/icmp.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dma.h" type="1"/>
+    <File name="LWIP/loopif.c" path="../../../Utilities/lwip_v1.3.2/src/netif/loopif.c" type="1"/>
+    <File name="LWIP/pap.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/pap.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dcmi.h" type="1"/>
+    <File name="LWIP/def.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/def.h" type="1"/>
+    <File name="LWIP/mem.c" path="../../../Utilities/lwip_v1.3.2/src/core/mem.c" type="1"/>
+    <File name="LWIP/pbuf.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/pbuf.h" type="1"/>
+    <File name="LWIP/memp_std.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/memp_std.h" type="1"/>
+    <File name="LWIP/netdb.c" path="../../../Utilities/lwip_v1.3.2/src/api/netdb.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rng.h" type="1"/>
+    <File name="LWIP/memp.c" path="../../../Utilities/lwip_v1.3.2/src/core/memp.c" type="1"/>
+    <File name="LWIP" path="" type="2"/>
+    <File name="LWIP/init.c" path="../../../Utilities/lwip_v1.3.2/src/core/init.c" type="1"/>
+    <File name="CMSIS/core_cm4.h" path="../../../Libraries/CMSIS/Include/core_cm4.h" type="1"/>
+    <File name="LWIP/tcp_in.c" path="../../../Utilities/lwip_v1.3.2/src/core/tcp_in.c" type="1"/>
+    <File name="LWIP/netbuf.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/netbuf.h" type="1"/>
+    <File name="User/fs.c" path="src/fs.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_crc.h" type="1"/>
+    <File name="User/stm32f4x7_eth_conf.h" path="inc/stm32f4x7_eth_conf.h" type="1"/>
+    <File name="User/main.c" path="src/main.c" type="1"/>
+    <File name="LWIP/lcp.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/lcp.h" type="1"/>
+    <File name="LWIP/tcp_out.c" path="../../../Utilities/lwip_v1.3.2/src/core/tcp_out.c" type="1"/>
+    <File name="CMSIS/core_cmInstr.h" path="../../../Libraries/CMSIS/Include/core_cmInstr.h" type="1"/>
+    <File name="User/netconf.c" path="src/netconf.c" type="1"/>
+    <File name="LWIP/inet.h" path="../../../Utilities/lwip_v1.3.2/src/include/ipv4/lwip/inet.h" type="1"/>
+    <File name="User/fsdata.h" path="inc/fsdata.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cryp.h" type="1"/>
+    <File name="LWIP/auth.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/auth.c" type="1"/>
+    <File name="User/lwipopts.h" path="inc/lwipopts.h" type="1"/>
+    <File name="CMSIS/core_cmFunc.h" path="../../../Libraries/CMSIS/Include/core_cmFunc.h" type="1"/>
+    <File name="LWIP/udp.c" path="../../../Utilities/lwip_v1.3.2/src/core/udp.c" type="1"/>
+    <File name="LWIP/sio.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/sio.h" type="1"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery_lcd.h" path="../../../Utilities/STM32F4-Discovery/stm32f4_discovery_lcd.h" type="1"/>
+    <File name="LWIP/api_lib.c" path="../../../Utilities/lwip_v1.3.2/src/api/api_lib.c" type="1"/>
+    <File name="User/httpd.c" path="src/httpd.c" type="1"/>
+    <File name="STM32F4x7_ETH_Driver/stm32f4x7_eth.c" path="../../../Libraries/STM32F4x7_ETH_Driver/src/stm32f4x7_eth.c" type="1"/>
+    <File name="User/netconf.h" path="inc/netconf.h" type="1"/>
+    <File name="LWIP/dhcp.c" path="../../../Utilities/lwip_v1.3.2/src/core/dhcp.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h" type="1"/>
+    <File name="User" path="" type="2"/>
+    <File name="LWIP/snmp.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/snmp.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver" path="" type="2"/>
+    <File name="LWIP/icmp.h" path="../../../Utilities/lwip_v1.3.2/src/include/ipv4/lwip/icmp.h" type="1"/>
+    <File name="LWIP/ip_frag.h" path="../../../Utilities/lwip_v1.3.2/src/include/ipv4/lwip/ip_frag.h" type="1"/>
+    <File name="CMSIS/stm32f4xx.h" path="../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c" type="1"/>
+    <File name="User/httpd_cgi_ssi.c" path="src/httpd_cgi_ssi.c" type="1"/>
+    <File name="LWIP/autoip.h" path="../../../Utilities/lwip_v1.3.2/src/include/ipv4/lwip/autoip.h" type="1"/>
+    <File name="LWIP/sys.c" path="../../../Utilities/lwip_v1.3.2/src/core/sys.c" type="1"/>
+    <File name="LWIP/ethernetif.c" path="../../../Utilities/lwip_v1.3.2/port/STM32F4x7/Standalone/ethernetif.c" type="1"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery_lcd.c" path="../../../Utilities/STM32F4-Discovery/stm32f4_discovery_lcd.c" type="1"/>
+    <File name="LWIP/dhcp.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/dhcp.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.c" type="1"/>
+    <File name="LWIP/magic.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/magic.c" type="1"/>
+    <File name="User/httpd.h" path="inc/httpd.h" type="1"/>
+    <File name="LWIP/slipif.c" path="../../../Utilities/lwip_v1.3.2/src/netif/slipif.c" type="1"/>
+    <File name="STM32F4-Discovery" path="" type="2"/>
+    <File name="LWIP/netdb.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/netdb.h" type="1"/>
+    <File name="User/serial_debug.c" path="src/serial_debug.c" type="1"/>
+    <File name="LWIP/memp.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/memp.h" type="1"/>
+    <File name="STM32F4x7_ETH_Driver/stm32f4x7_eth.h" path="../../../Libraries/STM32F4x7_ETH_Driver/inc/stm32f4x7_eth.h" type="1"/>
+    <File name="LWIP/ipcp.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/ipcp.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_i2c.h" type="1"/>
+    <File name="LWIP/ip_frag.c" path="../../../Utilities/lwip_v1.3.2/src/core/ipv4/ip_frag.c" type="1"/>
+    <File name="LWIP/pap.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/pap.h" type="1"/>
+    <File name="User/stm32f4xx_it.c" path="src/stm32f4xx_it.c" type="1"/>
+    <File name="LWIP/udp.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/udp.h" type="1"/>
+    <File name="LWIP/stats.c" path="../../../Utilities/lwip_v1.3.2/src/core/stats.c" type="1"/>
+    <File name="LWIP/netifapi.c" path="../../../Utilities/lwip_v1.3.2/src/api/netifapi.c" type="1"/>
+    <File name="User/stm32f4xx_conf.h" path="inc/stm32f4xx_conf.h" type="1"/>
+    <File name="LWIP/debug.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/debug.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h" type="1"/>
+    <File name="User/httpd_structs.h" path="inc/httpd_structs.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c" type="1"/>
+    <File name="LWIP/fsm.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/fsm.h" type="1"/>
+    <File name="LWIP/ipcp.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/ipcp.h" type="1"/>
+    <File name="CMSIS/core_cm4_simd.h" path="../../../Libraries/CMSIS/Include/core_cm4_simd.h" type="1"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery.h" path="../../../Utilities/STM32F4-Discovery/stm32f4_discovery.h" type="1"/>
+    <File name="LWIP/raw.c" path="../../../Utilities/lwip_v1.3.2/src/core/raw.c" type="1"/>
+    <File name="User/serial_debug.h" path="inc/serial_debug.h" type="1"/>
+    <File name="CMSIS/arm_math.h" path="../../../Libraries/CMSIS/Include/arm_math.h" type="1"/>
+    <File name="LWIP/dns.c" path="../../../Utilities/lwip_v1.3.2/src/core/dns.c" type="1"/>
+    <File name="LWIP/netif.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/netif.h" type="1"/>
+    <File name="LWIP/api_msg.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/api_msg.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_usart.h" type="1"/>
+    <File name="LWIP/ppp.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/ppp.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dbgmcu.h" type="1"/>
+    <File name="User/stm32f4x7_eth_bsp.h" path="inc/stm32f4x7_eth_bsp.h" type="1"/>
+    <File name="LWIP/dns.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/dns.h" type="1"/>
+    <File name="LWIP/netifapi.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/netifapi.h" type="1"/>
+    <File name="User/system_stm32f4xx.c" path="src/system_stm32f4xx.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c" type="1"/>
+    <File name="CMSIS/core_cm0.h" path="../../../Libraries/CMSIS/Include/core_cm0.h" type="1"/>
+    <File name="LWIP/md5.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/md5.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_sdio.h" type="1"/>
+    <File name="LWIP/ppp.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/ppp.h" type="1"/>
+    <File name="LWIP/netif.c" path="../../../Utilities/lwip_v1.3.2/src/core/netif.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_tim.h" type="1"/>
+    <File name="LWIP/ethernetif.h" path="../../../Utilities/lwip_v1.3.2/port/STM32F4x7/Standalone/ethernetif.h" type="1"/>
+    <File name="LWIP/snmp_structs.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/snmp_structs.h" type="1"/>
+    <File name="LWIP/raw.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/raw.h" type="1"/>
+    <File name="LWIP/etharp.c" path="../../../Utilities/lwip_v1.3.2/src/netif/etharp.c" type="1"/>
+    <File name="LWIP/fsm.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/fsm.c" type="1"/>
+    <File name="LWIP/autoip.c" path="../../../Utilities/lwip_v1.3.2/src/core/ipv4/autoip.c" type="1"/>
+    <File name="LWIP/pppdebug.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/pppdebug.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h" type="1"/>
+    <File name="LWIP/sockets.c" path="../../../Utilities/lwip_v1.3.2/src/api/sockets.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/misc.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c" type="1"/>
+    <File name="LWIP/md5.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/md5.h" type="1"/>
+    <File name="LWIP/inet_chksum.c" path="../../../Utilities/lwip_v1.3.2/src/core/ipv4/inet_chksum.c" type="1"/>
+    <File name="LWIP/err.c" path="../../../Utilities/lwip_v1.3.2/src/api/err.c" type="1"/>
+    <File name="LWIP/igmp.h" path="../../../Utilities/lwip_v1.3.2/src/include/ipv4/lwip/igmp.h" type="1"/>
+    <File name="LWIP/api.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/api.h" type="1"/>
+    <File name="LWIP/ip_addr.h" path="../../../Utilities/lwip_v1.3.2/src/include/ipv4/lwip/ip_addr.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_spi.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_exti.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dac.h" type="1"/>
+    <File name="User/main.h" path="inc/main.h" type="1"/>
+    <File name="LWIP/netbuf.c" path="../../../Utilities/lwip_v1.3.2/src/api/netbuf.c" type="1"/>
+    <File name="LWIP/randm.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/randm.h" type="1"/>
+    <File name="LWIP/chpms.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/chpms.c" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_hash.h" type="1"/>
+    <File name="LWIP/tcpip.c" path="../../../Utilities/lwip_v1.3.2/src/api/tcpip.c" type="1"/>
+    <File name="LWIP/mem.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/mem.h" type="1"/>
+    <File name="CMSIS/arm_common_tables.h" path="../../../Libraries/CMSIS/Include/arm_common_tables.h" type="1"/>
+    <File name="LWIP/stats.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/stats.h" type="1"/>
+    <File name="LWIP/err.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/err.h" type="1"/>
+    <File name="LWIP/tcp.c" path="../../../Utilities/lwip_v1.3.2/src/core/tcp.c" type="1"/>
+    <File name="User/fsdata.c" path="src/fsdata.c" type="1"/>
+    <File name="LWIP/inet.c" path="../../../Utilities/lwip_v1.3.2/src/core/ipv4/inet.c" type="1"/>
+    <File name="LWIP/snmp_asn1.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/snmp_asn1.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_can.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_can.h" type="1"/>
+    <File name="CMSIS/core_cm3.h" path="../../../Libraries/CMSIS/Include/core_cm3.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c" type="1"/>
+    <File name="LWIP/tcp.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/tcp.h" type="1"/>
+    <File name="STM32F4xx_StdPeriph_Driver/misc.h" path="../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/misc.h" type="1"/>
+    <File name="STM32F4x7_ETH_Driver" path="" type="2"/>
+    <File name="LWIP/sockets.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/sockets.h" type="1"/>
+    <File name="LWIP/inet_chksum.h" path="../../../Utilities/lwip_v1.3.2/src/include/ipv4/lwip/inet_chksum.h" type="1"/>
+    <File name="LWIP/pbuf.c" path="../../../Utilities/lwip_v1.3.2/src/core/pbuf.c" type="1"/>
+    <File name="LWIP/chpms.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/chpms.h" type="1"/>
+    <File name="LWIP/snmp_msg.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/snmp_msg.h" type="1"/>
+    <File name="LWIP/vj.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/vj.h" type="1"/>
+    <File name="LWIP/vjbsdhdr.h" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/vjbsdhdr.h" type="1"/>
+    <File name="LWIP/igmp.c" path="../../../Utilities/lwip_v1.3.2/src/core/ipv4/igmp.c" type="1"/>
+    <File name="LWIP/api_msg.c" path="../../../Utilities/lwip_v1.3.2/src/api/api_msg.c" type="1"/>
+    <File name="LWIP/arch.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/arch.h" type="1"/>
+    <File name="LWIP/tcpip.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/tcpip.h" type="1"/>
+    <File name="LWIP/ip_addr.c" path="../../../Utilities/lwip_v1.3.2/src/core/ipv4/ip_addr.c" type="1"/>
+    <File name="LWIP/opt.h" path="../../../Utilities/lwip_v1.3.2/src/include/lwip/opt.h" type="1"/>
+    <File name="LWIP/chap.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/chap.c" type="1"/>
+    <File name="LWIP/ppp_oe.h" path="../../../Utilities/lwip_v1.3.2/src/include/netif/ppp_oe.h" type="1"/>
+    <File name="LWIP/ip.c" path="../../../Utilities/lwip_v1.3.2/src/core/ipv4/ip.c" type="1"/>
+    <File name="User/stm32f4x7_eth_bsp.c" path="src/stm32f4x7_eth_bsp.c" type="1"/>
+    <File name="STM32F4-Discovery/stm32f4_discovery.c" path="../../../Utilities/STM32F4-Discovery/stm32f4_discovery.c" type="1"/>
+    <File name="LWIP/randm.c" path="../../../Utilities/lwip_v1.3.2/src/netif/ppp/randm.c" type="1"/>
+  </Files>
+</Project>
